@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SpecialityLandingWrapper = styled.div`
-  background: url("/images/backer_circle_gradient_02.png"),
+  background: url("/images/backer_circle_gradient_02.png") no-repeat,
     url("/images/illustration_app development.png"),
     linear-gradient(
       261.8deg,

@@ -2,12 +2,13 @@
 import React from "react";
 
 // @import page modules
-import { SpecialityLanding } from "../../modules/speciality";
+import { SpecialityLanding, WhyUseNodeJS } from "../../modules/speciality";
 
 export const Speciality: React.FC = () => {
   return (
     <div>
       <SpecialityLanding />
+      <WhyUseNodeJS />
     </div>
   );
 };
