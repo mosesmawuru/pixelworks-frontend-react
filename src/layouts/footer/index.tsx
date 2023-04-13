@@ -20,7 +20,7 @@ import { footerLinks } from "../data";
 export const Footer: React.FC = () => {
   return (
     <FooterWrapper>
-      <FooterContainer>
+      <FooterContainer className="container">
         <FooterContactInfo>
           <FooterLogo>
             <img src="/images/footer-logo.png" alt="" />

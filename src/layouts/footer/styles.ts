@@ -10,9 +10,6 @@ export const FooterWrapper = styled.div`
 `;
 
 export const FooterContainer = styled.div`
-  max-width: 1400px;
-  width: 95%;
-  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,6 +22,7 @@ export const FooterContactInfo = styled.div`
 `;
 
 export const FooterLogo = styled.div`
+  max-width: 255px;
   img {
     width: 100%;
   }
