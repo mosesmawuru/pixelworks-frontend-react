@@ -6,6 +6,7 @@ import { Header, Footer } from "../";
 
 // @import styled-components
 import { AppLayoutWrapper } from "./styles";
+import { ContactUs } from "../contact";
 
 export const AppLayout: React.FC<React.HTMLAttributes<HTMLElement>> = ({
   children,
@@ -14,6 +15,7 @@ export const AppLayout: React.FC<React.HTMLAttributes<HTMLElement>> = ({
     <AppLayoutWrapper>
       <Header />
       {children}
+      <ContactUs />
       <Footer />
     </AppLayoutWrapper>
   );
