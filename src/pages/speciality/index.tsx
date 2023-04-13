@@ -4,6 +4,7 @@ import React from "react";
 // @import page modules
 import {
   Advantages,
+  Expertise,
   SpecialityLanding,
   WhyUseNodeJS,
 } from "../../modules/speciality";
@@ -14,6 +15,7 @@ export const Speciality: React.FC = () => {
       <SpecialityLanding />
       <WhyUseNodeJS />
       <Advantages />
+      <Expertise />
     </div>
   );
 };

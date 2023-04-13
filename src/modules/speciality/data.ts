@@ -66,3 +66,17 @@ export const advantagesData = [
     desc: "A great number of brilliant developers compose a global Node.js community, make a significant contribution to its development, and support each other by sharing valuable insights and experience.",
   },
 ];
+
+export const expertiseDescData = [
+  "4-6 months for customized software development",
+  "2-5 months for web application development",
+  "3-6 months for mobile application development",
+];
+
+export const expertiseCardData = [
+  "Complex single-page apps (SPAs)",
+  "Browser games",
+  "Command-line tools",
+  "Server-side web apps",
+  "Many other disciplines",
+];
