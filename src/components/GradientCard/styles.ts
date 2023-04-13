@@ -31,4 +31,13 @@ export const GradientCardWrapper = styled.div`
     align-items: center;
     justify-content: center;
   }
+  ul {
+    margin: 0;
+    padding-left: 25px;
+    li {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 123%;
+    }
+  }
 `;

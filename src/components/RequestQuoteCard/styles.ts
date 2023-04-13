@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const RequestQuoteCardWrapper = styled.div`
   max-width: 472px;
+  min-width: 472px;
   box-sizing: border-box;
   width: 100%;
   background: #eaeaea;
