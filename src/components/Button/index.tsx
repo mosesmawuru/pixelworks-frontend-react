@@ -19,12 +19,15 @@ export const Button: React.FC<ButtonProps> = ({
   onClick,
   label,
   height,
+  className,
 }) => {
   return (
     <ButtonWrapper
+      className={className}
       onClick={onClick}
       style={{
-        width: width ? width + "px" : "100%",
+        maxWidth: width ? width + "px" : "100%",
+        width: "100%",
         height: height ? height + "px" : "40px",
         color: fColor ? fColor : "#fff",
         background: bgColor ? bgColor : "#13DEC9",
