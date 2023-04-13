@@ -26,4 +26,9 @@ export const GradientCardWrapper = styled.div`
     font-size: 16px;
     line-height: 123%;
   }
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 `;

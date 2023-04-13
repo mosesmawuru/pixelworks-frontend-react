@@ -8,15 +8,16 @@ export type GradientCardProps = {
   icon?: string;
   title?: string;
   desc?: string;
-};
+} & React.HTMLAttributes<HTMLElement>;
 
 export const GradientCard: React.FC<GradientCardProps> = ({
   title,
   desc,
   icon,
+  className,
 }) => {
   return (
-    <GradientCardWrapper>
+    <GradientCardWrapper className={className}>
       {icon && (
         <div>
           <img src={icon} alt="" />
