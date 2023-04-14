@@ -9,17 +9,29 @@ export const ContactUsWrapper = styled.div`
     linear-gradient(0deg, rgba(40, 173, 162, 0.41), rgba(40, 173, 162, 0.41)),
     url("/images/contact.png");
   padding: 81px 0 87px;
+  @media screen and (max-width: 520px) {
+    padding: 40px 0;
+  }
 `;
 
 export const ContactCardWrapper = styled.div`
   margin: auto;
   box-sizing: border-box;
   max-width: 1312px;
-  width: 100%;
+  width: 95%;
   background: #f8f8f8;
   border-radius: 6px;
   padding: 40px 113px 70px 50px;
   display: flex;
+  @media screen and (max-width: 1280px) {
+    padding-right: 50px;
+  }
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+  @media screen and (max-width: 520px) {
+    padding: 40px 20px;
+  }
 `;
 
 export const MeetingTextWrapper = styled.div`
@@ -35,6 +47,21 @@ export const MeetingTextWrapper = styled.div`
     line-height: 123%;
     color: #1e272b;
   }
+  @media screen and (max-width: 1280px) {
+    margin-right: 50px;
+  }
+  @media screen and (max-width: 768px) {
+    margin-bottom: 40px;
+    max-width: 100%;
+    h1 {
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 520px) {
+    & > :not(:first-child) {
+      margin-top: 30px;
+    }
+  }
 `;
 
 export const ContactFormWrapper = styled.div`
@@ -46,6 +73,7 @@ export const ContactFormWrapper = styled.div`
     font-size: 20px;
     line-height: 123%;
     color: #1e272b;
+    text-align: center;
   }
   & > :not(:first-child) {
     margin-top: 20px;
@@ -54,6 +82,7 @@ export const ContactFormWrapper = styled.div`
     font-weight: 400;
     line-height: 123%;
     font-size: 12px;
+    text-align: center;
     a {
       text-decoration: none;
       font-weight: 600;
@@ -78,4 +107,8 @@ export const ContactFormGroup = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
+  @media screen and (max-width: 520px) {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
 `;

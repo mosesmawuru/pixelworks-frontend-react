@@ -28,6 +28,13 @@ export const AdvantagesContainer = styled.div`
     line-height: 123%;
     margin: auto;
     margin-top: 73px;
+    @media screen and (max-width: 480px) {
+      margin-top: 30px;
+      max-width: 100% !important;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    padding: 40px 0;
   }
 `;
 
@@ -35,4 +42,14 @@ export const AdvantagesCardGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 58px 47px;
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+  @media screen and (max-width: 480px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;

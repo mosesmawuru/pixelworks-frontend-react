@@ -26,10 +26,27 @@ export const TimelineContainer = styled.div`
       font-weight: 700;
     }
   }
+  @media screen and (max-width: 1024px) {
+    h1 {
+      margin-bottom: 40px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    padding: 40px 0;
+  }
 `;
 
 export const TimelineGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 47px;
+  @media screen and (max-width: 1024px) {
+    grid-gap: 20px;
+  }
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (max-width: 425px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;

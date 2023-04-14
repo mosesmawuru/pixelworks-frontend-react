@@ -8,12 +8,22 @@ export const HomeLandingContainer = styled.div`
   display: flex;
   padding: 130px 0 160px;
   width: fit-content;
+
   margin: auto;
+  @media screen and (max-width: 1440px) {
+    width: 90%;
+  }
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    padding: 50px 0;
+    width: 90%;
+    align-items: center;
+  }
 `;
 
 export const HomeLandingTextWrapper = styled.div`
   max-width: 960px;
-  width: 100%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,8 +53,31 @@ export const HomeLandingTextWrapper = styled.div`
     align-items: center;
     margin-top: 11px;
     justify-content: center;
+    flex-wrap: wrap;
     & > :not(:first-child) {
       margin-left: 32px;
+    }
+    img {
+      margin-top: 20px;
+    }
+  }
+  @media screen and (max-width: 1440px) {
+    margin-right: 0;
+    width: 95%;
+    p {
+      width: auto;
+    }
+    text-align: center;
+  }
+  @media screen and (max-width: 425px) {
+    div {
+      & > :not(:first-child) {
+        margin-left: 0;
+      }
+      img {
+        padding: 0 15px;
+        margin-top: 20px;
+      }
     }
   }
 `;
@@ -57,4 +90,15 @@ export const HomeLandingCard = styled.div`
     width: 100%;
   }
   position: relative;
+  margin-left: auto;
+  @media screen and (max-width: 1024px) {
+    max-width: auto;
+    min-width: auto;
+    & > div {
+      position: static;
+      width: 100%;
+    }
+    margin: auto;
+    margin-top: 30px;
+  }
 `;

@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const RequestQuoteCardWrapper = styled.div`
   max-width: 472px;
-  min-width: 472px;
   box-sizing: border-box;
   width: 100%;
   background: #eaeaea;
@@ -35,10 +34,16 @@ export const RequestQuoteCardWrapper = styled.div`
     line-height: 123%;
     color: #1e272b;
   }
+  @media screen and (max-width: 425px) {
+    padding: 30px 20px;
+  }
 `;
 
 export const RequestQuoteFormGroup = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
+  @media screen and (max-width: 425px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;

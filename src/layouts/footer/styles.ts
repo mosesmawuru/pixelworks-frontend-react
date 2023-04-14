@@ -7,12 +7,18 @@ export const FooterWrapper = styled.div`
     linear-gradient(269.13deg, #010404 -6.68%, rgba(33, 49, 55, 0) 35.07%),
     #1e272b;
   padding: 100px 0;
+  @media screen and (max-width: 520px) {
+    padding: 40px 0;
+  }
 `;
 
 export const FooterContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: 1024px) {
+    align-items: flex-start;
+  }
 `;
 
 export const FooterContactInfo = styled.div`
@@ -58,6 +64,22 @@ export const FooterNavigation = styled.div`
   align-items: center;
   & > :not(:first-child) {
     margin-left: 110px;
+  }
+  @media screen and (max-width: 1280px) {
+    & > :not(:first-child) {
+      margin-left: 80px;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    & > :not(:first-child) {
+      margin-left: 0;
+      margin-top: 30px;
+    }
+    align-items: flex-start;
+  }
+  @media screen and (max-width: 520px) {
+    display: none;
   }
 `;
 

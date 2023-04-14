@@ -1,14 +1,18 @@
 // @import npm modules
 import React from "react";
 
+// @import custom component
+import { GradientCard } from "../../../components";
+
 // @import styled-components
 import {
   CordValuesContainer,
   CoreValuesGrid,
   CoreValuesWrapper,
 } from "./styles";
+
+// @import page data
 import { coreValuesData } from "../data";
-import { GradientCard } from "../../../components";
 
 export const CoreValues: React.FC = () => {
   return (

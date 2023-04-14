@@ -15,6 +15,13 @@ export const SpecialityLandingContainer = styled.div`
   padding: 74px 0;
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (max-width: 425px) {
+    padding: 40px 0;
+  }
 `;
 
 export const SpecialityLandingDescWrapper = styled.div`
@@ -35,6 +42,9 @@ export const SpecialityLandingDescWrapper = styled.div`
     max-width: 745px;
     width: 100%;
   }
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 50px;
+  }
 `;
 
 export const SpecialityCheckboxGroup = styled.div`
@@ -47,5 +57,12 @@ export const SpecialityCheckboxGroupWrapper = styled.div`
   display: flex;
   & > :not(:first-child) {
     margin-left: 40px;
+  }
+  @media screen and (max-width: 425px) {
+    flex-direction: column;
+    & > :not(:first-child) {
+      margin-left: 0;
+      margin-top: 19px;
+    }
   }
 `;

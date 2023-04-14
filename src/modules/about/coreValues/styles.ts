@@ -37,4 +37,16 @@ export const CoreValuesGrid = styled.div`
   .core-values {
     max-width: 280px;
   }
+  @media screen and (max-width: 1024px) {
+    grid-gap: 20px;
+  }
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    .core-values {
+      max-width: 100%;
+    }
+  }
+  @media screen and (max-width: 420px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;

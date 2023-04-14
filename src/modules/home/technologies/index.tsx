@@ -27,7 +27,7 @@ export const Technologies: React.FC = () => {
                 <p>{item.label}</p>
               </TechnologiesCard>
             ) : (
-              <div></div>
+              <div key={key}></div>
             )
           )}
           <TechnologiesCard>

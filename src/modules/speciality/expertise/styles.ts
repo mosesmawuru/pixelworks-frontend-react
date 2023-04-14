@@ -8,6 +8,10 @@ export const ExpertiseContainer = styled.div`
   display: flex;
   justify-content: center;
   padding: 57px 0 102px;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    padding: 40px 0;
+  }
 `;
 
 export const ExpertiseDescWrapper = styled.div`
@@ -30,6 +34,11 @@ export const ExpertiseDescWrapper = styled.div`
   & > :not(:first-child) {
     margin-top: 13px;
   }
+  @media screen and (max-width: 768px) {
+    h1 {
+      height: auto;
+    }
+  }
 `;
 
 export const ExpertiseDescGroup = styled.div`
@@ -47,9 +56,22 @@ export const ExpertiseCardWrapper = styled.div`
 
   background: #ffffff;
   border-radius: 12px;
+  box-sizing: border-box;
   padding: 20px 20px 36px;
   & > :not(:first-child) {
     margin-top: 28px;
+  }
+  @media screen and (max-width: 1024px) {
+    max-width: 50%;
+  }
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+  @media screen and (max-width: 475px) {
+    p {
+      height: auto;
+    }
   }
 `;
 

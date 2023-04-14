@@ -20,7 +20,7 @@ export const HomeLanding: React.FC = () => {
           <span>Trusted by Top-Tier Companies</span>
           <div>
             {[...new Array(5)].map((item, key) => (
-              <img src="/images/home-item.png" alt="" />
+              <img src="/images/home-item.png" alt="" key={key} />
             ))}
           </div>
         </HomeLandingTextWrapper>

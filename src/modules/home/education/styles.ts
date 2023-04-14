@@ -4,6 +4,14 @@ export const EducationWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 95%;
+  margin: auto;
+  @media screen and (max-width: 1024px) {
+    padding: 30px 0;
+  }
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const EducationTextWrapper = styled.div`
@@ -11,6 +19,14 @@ export const EducationTextWrapper = styled.div`
   width: 100%;
   & > :not(:first-child) {
     margin-top: 57px;
+  }
+  @media screen and (max-width: 1024px) {
+    & > :not(:first-child) {
+      margin-top: 30px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
   }
 `;
 

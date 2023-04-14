@@ -12,7 +12,7 @@ export const GradientCardWrapper = styled.div`
     margin-top: 14px;
   }
   h4 {
-    width: 240px;
+    /* width: 240px; */
     height: 68px;
     display: flex;
     align-items: center;

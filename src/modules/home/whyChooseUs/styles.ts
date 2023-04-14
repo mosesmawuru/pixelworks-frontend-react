@@ -31,6 +31,12 @@ export const WhyChooseUsGrid = styled.div`
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
   margin-top: 23px;
+  @media screen and (max-width: 1024px) {
+    grid-gap: 20px;
+  }
+  @media screen and (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const WhyChooseUsCard = styled.div`

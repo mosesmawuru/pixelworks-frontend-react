@@ -8,6 +8,10 @@ export const WhyContainer = styled.div`
   display: flex;
   justify-content: center;
   padding: 75px 0;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    padding: 40px 0;
+  }
 `;
 
 export const WhyDescWrapper = styled.div`
@@ -43,6 +47,17 @@ export const WhyDescWrapper = styled.div`
       line-height: 123%;
     }
   }
+  @media screen and (max-width: 1024px) {
+    margin-right: 25px;
+  }
+  @media screen and (max-width: 768px) {
+    h1 {
+      height: auto;
+    }
+    & > :not(:first-child) {
+      margin-top: 30px;
+    }
+  }
 `;
 
 export const WhyCardWrapper = styled.div`
@@ -52,6 +67,7 @@ export const WhyCardWrapper = styled.div`
   border-radius: 6px;
   padding: 20px 20px 37px;
   color: #1e272b;
+  box-sizing: border-box;
   h1 {
     font-weight: 600;
     font-size: 30px;
@@ -67,6 +83,18 @@ export const WhyCardWrapper = styled.div`
     font-size: 18px;
     line-height: 123%;
   }
+  @media screen and (max-width: 1024px) {
+    max-width: 50%;
+  }
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+  @media screen and (max-width: 475px) {
+    p {
+      height: auto;
+    }
+  }
 `;
 
 export const WhyCheckboxGroup = styled.div`
@@ -75,5 +103,17 @@ export const WhyCheckboxGroup = styled.div`
   grid-gap: 28px;
   span {
     color: #13dec9;
+  }
+  @media screen and (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media screen and (max-width: 475px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (max-width: 375px) {
+    grid-template-columns: repeat(1, 1fr);
   }
 `;

@@ -26,11 +26,21 @@ export const CollapseHeader = styled.div`
       margin-right: 50px;
     }
   }
+  @media screen and (max-width: 768px) {
+    height: 100px;
+    padding: 0 20px;
+    & > div {
+      font-size: 18px;
+      img {
+        margin-right: 20px;
+      }
+    }
+  }
 `;
 
 export const CollapseBodyText = styled.p`
   max-width: 1000px;
   margin: auto;
-  width: 95%;
+  width: 90%;
   padding-bottom: 20px;
 `;

@@ -22,6 +22,12 @@ export const TechnologiesGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 13px;
+  @media screen and (max-width: 1080px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 export const TechnologiesCard = styled.div`
