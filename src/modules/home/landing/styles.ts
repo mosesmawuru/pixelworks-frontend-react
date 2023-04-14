@@ -2,8 +2,13 @@ import styled from "styled-components";
 
 export const HomeLandingWrapper = styled.div`
   background: url("/images/home.png");
+`;
+
+export const HomeLandingContainer = styled.div`
   display: flex;
   padding: 130px 0 160px;
+  width: fit-content;
+  margin: auto;
 `;
 
 export const HomeLandingTextWrapper = styled.div`
@@ -45,6 +50,8 @@ export const HomeLandingTextWrapper = styled.div`
 `;
 
 export const HomeLandingCard = styled.div`
+  max-width: 472px;
+  min-width: 472px;
   & > div {
     position: absolute;
     width: 100%;
