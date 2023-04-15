@@ -72,6 +72,7 @@ export const MobileHeaderNavigation = styled.div`
 
 export const MobileHeaderWrapper = styled.div<{ isOpened: boolean }>`
   position: fixed;
+  z-index: 99999999;
   width: 100%;
   height: 100%;
   top: 0;
