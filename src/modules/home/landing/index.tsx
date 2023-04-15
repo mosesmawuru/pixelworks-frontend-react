@@ -14,8 +14,9 @@ export const HomeLanding: React.FC = () => {
         <HomeLandingTextWrapper>
           <h1>Software For The Extraordinary</h1>
           <p>
-            Cras vehicula sapien quis volutpat auctor. Phasellus consectetur
-            laoreet pulvinar.
+            {
+              "Cras vehicula sapien quis volutpat auctor. Phasellus consectetur laoreet pulvinar."
+            }
           </p>
           <span>Trusted by Top-Tier Companies</span>
           <div>
