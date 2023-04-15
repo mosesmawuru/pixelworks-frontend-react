@@ -23,6 +23,9 @@ export const TechnologiesGrid = styled.div`
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 13px;
   @media screen and (max-width: 1080px) {
+    .empty-div {
+      display: none;
+    }
     grid-template-columns: repeat(2, 1fr);
   }
   @media screen and (max-width: 600px) {
